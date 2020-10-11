@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "dc14ed8f-63fc-4b32-91de-25b9a2f2b0f6",
+		"name": "mobile-20",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1/mobile-backend-20@api/api/register_member_first.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"fname\":\"lwanga\",\r\n\t\"lname\":\"Aksam\",\r\n\t\"email\":\"aksam@gmail.com\",\r\n\t\"password\":\"Admin\",\r\n\t\"re_password\":\"Admin\"\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1/mobile-backend-20@api/api/register_member_first.php",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"mobile-backend-20@api",
+						"api",
+						"register_member_first.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/mobile-backend-20@api/api/login_user.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"aksam@gmail.com\",\r\n    \"password\":\"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1/mobile-backend-20@api/api/login_user.php",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"mobile-backend-20@api",
+						"api",
+						"login_user.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/mobile-backend-20@api/api/get_users.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1/mobile-backend-20@api/api/get_users.php",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"mobile-backend-20@api",
+						"api",
+						"get_users.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/mobile-backend-20@api/api/loan_payment.php",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"loan_id\":\"2\",\r\n \"member_id\":\"1\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/mobile-backend-20@api/api/loan_payment.php",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"mobile-backend-20@api",
+						"api",
+						"loan_payment.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/mobile-backend-20@api/api/register_new_loan.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"amount_applied\":\"500000\",\r\n\t\"interest\":\"5\",\r\n\t\"repay_peroid\":\"6\",\r\n\t\"member_id\":\"1\",\r\n\t\"loan_type_id\":\"1\",\r\n    \"member_id_gr\":\"1\",\r\n    \"amount_gr\":\"30000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1/mobile-backend-20@api/api/register_new_loan.php",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"mobile-backend-20@api",
+						"api",
+						"register_new_loan.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/mobile-backend-20@api/api/loan_details.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1/mobile-backend-20@api/api/loan_details.php",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"mobile-backend-20@api",
+						"api",
+						"loan_details.php"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
